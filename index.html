@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <title>Asociación Civil</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Styles CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <!--Barra de Navegacion-->
+  <header>
+    <nav class="navbar">
+      <a href="/" class="navbar-brand">Asociación Civil</a>
+      <ul class="nav">
+        <li class="nav-item"><a href="/" class="nav-link">Registro</a></li>
+        <li class="nav-item"><a href="reporte.html" class="nav-link">Reporte</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--Contenedor-->
+  <div class="container">
+
+    <!--Titulo-->
+    <div class="page-header center-text">
+      <h1>Formato Único de Afiliación</h2>
+        <p>Llene con Cuidado Este Formato</p>
+    </div>
+
+    <!--Formulario-->
+    <form>
+
+      <div class="form-group">
+        <h5>NOMBRE</h5>
+        <input type="text" name="name" id="name" placeholder="Nombre" required>
+        <input type="text" name="apat" id="apat" placeholder="Apellido Paterno" required>
+        <input type="text" name="amat" id="amat" placeholder="Apellido Materno" required>
+      </div>
+
+      <!--Datos Generales-->
+      <div class="row">
+
+        <div class="col">
+
+          <div class="field">
+            <h5>FECHA DE NACIMIENTO</h5>
+            <input type="date" name="fnac" id="fnac" required>
+          </div>
+
+          <div class="field">
+            <h5>CURP</h5>
+            <input type="text" name="curp" id="curp" placeholder="Ej. XXXX123456ABSDRX0" required>
+          </div>
+
+          <div class="row my-auto">
+
+            <div class="col field">
+              <h5>Sección</h5>
+              <input type="text" name="sec" id="sec" placeholder="Sección" required>
+            </div>
+
+            <div class="col form-group">
+
+         <h5>Genero</h5>
+              <label>M<input type="radio" name="gen" id="gen" value="M">
+              </label>
+
+              <label>
+                F
+                <input type="radio" name="gen" id="gen" value="F">
+              </label>
+            </div>
+
+          </div>
+
+          <div class="field">
+            <h5>Religión</h5>
+            <input type="text" name="rel" id="rel">
+          </div>
+
+        </div>
+
+
+        <div class="col">
+
+          <!--Domicilio-->
+          <div class="field">
+            <h5>DOMICILIO</h5>
+            <div class="field-dom">
+              <label for="calle">Calle</label>
+              <input type="text" name="calle" id="calle" placeholder="ej. Benito Juarez" required>
+            </div>
+            <div class="field-dom">
+              <label for="col">Colonia</label>
+              <input type="text" name="col" id="col" placeholder="ej. Independencia" required>
+            </div>
+            <div class="field-dom">
+              <label for="mun">Municipio</label>
+              <input type="text" name="mun" id="mun" placeholder="ej. Macuspana" required>
+            </div>
+            <div class="field-dom">
+              <label for="est">Estado</label>
+              <input type="text" name="est" id="est" placeholder="ej. Tabasco" required>
+            </div>
+            <div class="field-dom">
+              <label for="cp">C.P.</label>
+              <input type="text" name="cp" id="cp" placeholder="Ej. 86700" required>
+            </div>
+
+
+
+
+
+          </div>
+
+          <div class="field">
+            <h5>Clave de Elector</h5>
+            <input type="text" name="clvE" id="">
+          </div>
+
+          <!--Contacto-->
+          <div class="field">
+            <div class="field-cont">
+
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+    </form>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
