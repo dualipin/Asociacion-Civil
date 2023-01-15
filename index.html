@@ -32,114 +32,185 @@
     <!--Titulo-->
     <div class="page-header center-text">
       <h1>Formato Único de Afiliación</h2>
-        <p>Llene con Cuidado Este Formato</p>
+        <p><strong>Llene con Cuidado Este Formato</strong></p>
     </div>
 
     <!--Formulario-->
     <form>
 
-      <div class="form-group">
-        <h5>NOMBRE</h5>
-        <input type="text" name="name" id="name" placeholder="Nombre" required>
-        <input type="text" name="apat" id="apat" placeholder="Apellido Paterno" required>
-        <input type="text" name="amat" id="amat" placeholder="Apellido Materno" required>
+      <!--Nombre-->
+      <div class="row">
+        <div class="col-sm-4 form-group">
+          <label for="name">Nombre</label>
+          <input class="form-control" type="text" name="name" id="name" placeholder="Nombre" required>
+        </div>
+        <div class="col-sm-4 form-group">
+          <label for="apat">Apellido Paterno</label>
+          <input class="form-control" type="text" name="apat" id="apat" placeholder="Apellido Paterno" required>
+        </div>
+        <div class="col-sm-4 form-group">
+          <label for="amat">Apellido Materno</label>
+          <input class="form-control" type="text" name="amat" id="amat" placeholder="Apellido Materno" required>
+        </div>
       </div>
 
       <!--Datos Generales-->
       <div class="row">
+        <div class="col-sm-6">
 
-        <div class="col">
-
-          <div class="field">
-            <h5>FECHA DE NACIMIENTO</h5>
-            <input type="date" name="fnac" id="fnac" required>
+          <div class="form-group">
+            <label for="fnac">FECHA DE NACIMIENTO</label>
+            <input class="form-control" type="date" name="fnac" id="fnac" required>
           </div>
 
-          <div class="field">
-            <h5>CURP</h5>
-            <input type="text" name="curp" id="curp" placeholder="Ej. XXXX123456ABSDRX0" required>
+          <div class="form-group">
+            <label for="curp">CURP</label>
+            <input class="form-control" type="text" name="curp" id="curp" placeholder="Ej. XXXX123456ABSDRX0" required>
           </div>
 
-          <div class="row my-auto">
+          <div class="row">
 
-            <div class="col field">
-              <h5>Sección</h5>
-              <input type="text" name="sec" id="sec" placeholder="Sección" required>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="sec">Sección</label>
+                <input class="form-control" type="text" name="sec" id="sec" placeholder="Sección" required>
+              </div>
             </div>
 
-            <div class="col form-group">
-
-         <h5>Genero</h5>
-              <label>M<input type="radio" name="gen" id="gen" value="M">
-              </label>
-
-              <label>
-                F
-                <input type="radio" name="gen" id="gen" value="F">
-              </label>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>Genero</label><br>
+                <label class="radio-inline">
+                  <input type="radio" name="gen" id="gen" value="M">
+                  M
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="gen" id="gen" value="F">
+                  F
+                </label>
+              </div>
             </div>
-
           </div>
 
-          <div class="field">
-            <h5>Religión</h5>
-            <input type="text" name="rel" id="rel">
+          <div class="form-group">
+            <label for="rel">Religión</label>
+            <input class="form-control" type="text" name="rel" id="rel" placeholder="Ingresa tu religión">
+          </div>
+
+          <div class="form-group">
+            <label for="clvE">Clave de Elector</label>
+            <input class="form-control" type="text" name="clvE" id="clvE" placeholder="Clave de Elector" required>
+          </div>
+
+          <div class="form-group">
+            <label for="estCiv">Estado Civil</label>
+            <select class="form-control" name="estCiv" id="estCiv">
+              <option selected disabled>Seleccione una opción</option>
+              <option value="casado">Casado</option>
+              <option value="soltero">Soltero</option>
+            </select>
           </div>
 
         </div>
 
+        <!--Domicilio-->
+        <div class="col-sm-6">
 
-        <div class="col">
 
-          <!--Domicilio-->
-          <div class="field">
+          <div class="form-group">
             <h5>DOMICILIO</h5>
-            <div class="field-dom">
+            <div class="form-group">
               <label for="calle">Calle</label>
-              <input type="text" name="calle" id="calle" placeholder="ej. Benito Juarez" required>
+              <input class="form-control" type="text" name="calle" id="calle" placeholder="ej. Benito Juarez" required>
             </div>
-            <div class="field-dom">
+            <div class="form-group">
               <label for="col">Colonia</label>
-              <input type="text" name="col" id="col" placeholder="ej. Independencia" required>
+              <input class="form-control" type="text" name="col" id="col" placeholder="ej. Independencia" required>
             </div>
-            <div class="field-dom">
+            <div class="form-group">
               <label for="mun">Municipio</label>
-              <input type="text" name="mun" id="mun" placeholder="ej. Macuspana" required>
+              <input class="form-control" type="text" name="mun" id="mun" placeholder="ej. Macuspana" required>
             </div>
-            <div class="field-dom">
+            <div class="form-group">
               <label for="est">Estado</label>
-              <input type="text" name="est" id="est" placeholder="ej. Tabasco" required>
+              <input class="form-control" type="text" name="est" id="est" placeholder="ej. Tabasco" required>
             </div>
-            <div class="field-dom">
+            <div class="form-group">
               <label for="cp">C.P.</label>
-              <input type="text" name="cp" id="cp" placeholder="Ej. 86700" required>
+              <input class="form-control" type="text" name="cp" id="cp" placeholder="Ej. 86700" required>
             </div>
 
-
-
-
-
-          </div>
-
-          <div class="field">
-            <h5>Clave de Elector</h5>
-            <input type="text" name="clvE" id="">
-          </div>
-
-          <!--Contacto-->
-          <div class="field">
-            <div class="field-cont">
-
-            </div>
           </div>
 
         </div>
+        <!--Fin domicilio-->
 
+      </div>
+      <!--Fin datos generales-->
 
+      <div class="form-group">
+        <h5>Datos de Contacto</h5>
+        <div class="row">
+          <div class="col-sm-6">
+            <label for="email">Correo Electronico</label>
+            <input class="form-control" type="email" name="email" id="email" placeholder="Ej. algo@algo.algo" required>
+          </div>
+          <div class="col-sm-6">
+            <label for="tel">Telefono</label>
+            <input class="form-control" type="tel" name="tel" id="tel" placeholder="Telefono" required>
+          </div>
+        </div>
+      </div>
 
+      <div class="form-group">
+        <h5>Para conocerte</h5>
+        <div class="row">
+          <div class="col-sm-4">
+            <label for="ine_izq">INE Frontal</label>
+            <input class="form-control" type="file" name="ine_izq" id="ine_izq" required
+              accept="image/png, .jpeg, .jpg">
+          </div>
+          <div class="col-sm-4">
+            <label for="ine_der">INE Posterior</label>
+            <input class="form-control" type="file" name="ine_der" id="ine_der" required
+              accept="image/png, .jpeg, .jpg">
+          </div>
+          <div class="col-sm-4">
+            <label for="foto">Fotografia Personal</label>
+            <input class="form-control" type="file" name="foto" id="foto" required accept="image/png, .jpeg, .jpg">
+          </div>
+        </div>
+      </div>
 
+      <div class="form-grup">
+        <h5>Extra</h5>
+        <div class="row">
+          <div class="col-6">
+            <label for="obs">Observaciones</label>
+            <textarea class="form-control" name="obs" id="obs" rows="4"
+              placeholder="Ingresa las Observaciones"></textarea>
+          </div>
+          <div class="col-6">
+            <div class="row">
+
+              <label for="status">Estatus</label>
+              <input class="form-control" type="text" name="status" id="status" placeholder="Ingresa el Estatus"
+                required>
+            </div>
+
+            <div class="row">
+              <label for="prom">Promotor</label>
+              <input class="form-control" type="text" name="prom" id="prom" placeholder="Nombre del Promotor" required>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit">ENVIAR</button>
+      <button class="btn btn-danger" type="reset">Borrar Formulario</button>
     </form>
   </div>
+
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
