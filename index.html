@@ -8,22 +8,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Styles CSS -->
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
   <!--Barra de Navegacion-->
-  <header>
-    <nav class="navbar">
-      <a href="#" class="navbar-brand">Asociación Civil</a>
-      <ul class="nav">
-        <li class="nav-item"><a href="#" class="nav-link">Registro</a></li>
-        <li class="nav-item"><a href="reporte.html" class="nav-link">Reporte</a></li>
-      </ul>
-    </nav>
+  <header id="root">
+
   </header>
 
   <!--Contenedor-->
@@ -39,18 +32,18 @@
     <form>
 
       <!--Nombre-->
-      <div class="row">
-        <div class="col-sm-4 form-group">
-          <label for="name">Nombre</label>
-          <input class="form-control" type="text" name="name" id="name" placeholder="Nombre" required>
-        </div>
-        <div class="col-sm-4 form-group">
-          <label for="apat">Apellido Paterno</label>
-          <input class="form-control" type="text" name="apat" id="apat" placeholder="Apellido Paterno" required>
-        </div>
-        <div class="col-sm-4 form-group">
-          <label for="amat">Apellido Materno</label>
-          <input class="form-control" type="text" name="amat" id="amat" placeholder="Apellido Materno" required>
+      <div class="form-group">
+        <h5 class="">Nombre</h5>
+        <div class="row">
+          <div class="col-4">
+            <input class="form-control" type="text" name="name" id="name" placeholder="Nombre" required>
+          </div>
+          <div class="col-4">
+            <input class="form-control" type="text" name="apat" id="apat" placeholder="Apellido Paterno" required>
+          </div>
+          <div class="col-4">
+            <input class="form-control" type="text" name="amat" id="amat" placeholder="Apellido Materno" required>
+          </div>
         </div>
       </div>
 
@@ -182,7 +175,7 @@
         </div>
       </div>
 
-      <div class="form-grup">
+      <div class="form-group">
         <h5>Extra</h5>
         <div class="row">
           <div class="col-6">
@@ -191,26 +184,27 @@
               placeholder="Ingresa las Observaciones"></textarea>
           </div>
           <div class="col-6">
-            <div class="row">
-
+            <div class="row mx-auto">
               <label for="status">Estatus</label>
               <input class="form-control" type="text" name="status" id="status" placeholder="Ingresa el Estatus"
                 required>
             </div>
 
-            <div class="row">
+            <div class="row mx-auto">
               <label for="prom">Promotor</label>
               <input class="form-control" type="text" name="prom" id="prom" placeholder="Nombre del Promotor" required>
             </div>
           </div>
         </div>
       </div>
-      <button class="btn btn-primary" type="submit">ENVIAR</button>
+      <button class="btn btn-primary" type="submit" id="submit">ENVIAR</button>
       <button class="btn btn-danger" type="reset">Borrar Formulario</button>
     </form>
   </div>
 
   <script src="js/script.js"></script>
+  <script type="module" src="/src/main.jsx"></script>
+
 </body>
 
 </html>
